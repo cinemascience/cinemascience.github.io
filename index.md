@@ -15,6 +15,7 @@ All of our software is open source, and is available at the
 ## [](#header-2)Contributors
 
 ![logo](/assets/lanl-logo-footer.png){:width="200px"}
+![logo](/assets/kitware_logo.png){:width="200px"}
 
 
 
