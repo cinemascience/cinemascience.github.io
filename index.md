@@ -6,11 +6,15 @@ layout: default
 
 This is the project page for the Cinema project.
 
-## [](#header-2)Repositories
+## [](#header-2)Welcome
 
-| repository   | description       |
-|:-------------|:------------------|
-| cinemascience.github.io | this website |
-| cinema_projectmanagement | project management, including design docs,
-requirements, etc |
+All of our software is open source, and is available at the [Cinema Science
+github]{https://www.github.com/cinemascience}
+
+
+## [](#header-2)Contributors
+
+![logo](/assets/lanl-logo-footer.png){:width="200px"}
+
+
 
