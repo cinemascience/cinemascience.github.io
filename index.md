@@ -4,7 +4,7 @@ layout: default
 
 ## [](#header-2)Welcome
 
-This is the project page for the Cinema project.
+Project page for the Cinema project.
 
 ## [](#header-2)Source Code
 
