@@ -208,19 +208,19 @@ body {
 	border-radius: 5px;
 }
 .socketOverlay[mode="empty"] {
-	background: url('arrow_blue.png') no-repeat;
+	background: url('images/arrow_blue.png') no-repeat;
 	background-position: center;
 	background-size: contain;
 	background-origin: content-box;
 }
 .socketOverlay[mode="filled"]:hover {
-	background: url('arrow.png') no-repeat, rgba(0,0,0,0.5);
+	background: url('images/arrow.png') no-repeat, rgba(0,0,0,0.5);
 	background-position: center;
 	background-size: contain;
 	background-origin: content-box;
 }
 .socketOverlay[mode="disabled"] {
-	background: url('x.png') no-repeat;
+	background: url('images/x.png') no-repeat;
 	background-position: center;
 	background-size: contain;
 	background-origin: content-box;
