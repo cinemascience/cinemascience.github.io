@@ -149,8 +149,12 @@
 	}
 
 /* Section/Article */
-
+/* changed text-align to left from center */
 	section.special, article.special {
+		text-align: left;
+	}
+
+	section.special-center, article.special-center {
 		text-align: center;
 	}
 
@@ -182,16 +186,17 @@
 
 	header.major {
 		text-align: center;
-		margin: 0 0 4em 0;
+		margin: 0 2em 4em 0;
 	}
 
 		header.major h2 {
 			font-size: 2em;
 		}
-
+/* changed margin from -1em 0 2em 0*/
 		header.major h2 + p {
 			font-size: 1.5em;
-			margin: -1em 0 2em 0;
+			margin: -1.5em 0 2em 2em;
+			text-align: left
 		}
 
 /* Form */

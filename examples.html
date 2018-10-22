@@ -44,6 +44,8 @@
 			<section id="main" class="wrapper style1">
 				<header class="major">
 					<h2>Cinema Examples</h2>
+
+					<p>These examples explore the different modes of Cinema.  Cinema:Compare allows the user to interactively view pre-rendered images -- similar to the way a user may view the data in a visualization application (e.g. ParaView or VisIt).  It can be used in an interactive mode with a single database or by bringing in two or more databases that can be manipulated in tandem to interactively compare multiple data sets.  Cinema:Explorer is a parallel coordinates approach to interactive data exploration.  The user can select data and, through different Cinema components, highlight images, scatterplots, or specialized views of the data. </p>
 				</header>
 				<div id="examples" class="container">
 
@@ -56,10 +58,10 @@
 
 							<div class="4u"> <!-- first  -->
 								<section class="special">
-									<h3>Cinema Spec A</h3>
-									<p>A simple sphere with Spec A:  a single theta=0 value with 12 phi values.  This interactive visualization uses the Cinema desktop viewer. Zooming can be done with the mouse scroll wheel.  Rotation can be done via mouse or UI controls.</p>
+									<h3>Cinema:Interactive</h3>
+									<p>Cinema:Compare can be used with a single database, here an MPAS-Ocean simulation of ocean eddies. The Cinema database includes a series of pre-rendered images.  UI sliders allow the viewer to rotate the globe in phi and theta and see the eddies flow over time.</p>
 									<video class="image fit" controls>
-									  <source src="videos/SimpleSphereDemo1.mp4" type="video/mp4">
+									  <source src="videos/CinemaInteractiveMPAS.mp4" type="video/mp4">
 									  Your browser does not support HTML5 video.
 									</video>
 								</section>
@@ -67,47 +69,36 @@
 
 						<div class="4u"> <!-- second  -->
 							<section class="special">
-								<h3>Cinema Spec A</h3>
-								<p>A Spec A database of 7440 images from a Nyx cosmology simulation of dark matter density.  There are 31 time steps and multiple theta/phi values.  Additionally, there are five different isosurfaces available. </p>
+								<h3>Cinema:Compare</h3>
+								<p>Cinema:Compare can also be used to view multiple databases.  In this plasma accelerator simulation (left) regularly spaced isosurfaces are compared to (right) a topological approach to identify important isosurfaces.  The two Cinema databases can be explored and compared in tandem. </p>
 								<video class="image fit" controls>
-									<source src="videos/NyxDemo2.mp4" type="video/mp4">
+									<source src="videos/CinemaComparisonWarp.mp4" type="video/mp4">
 									Your browser does not support HTML5 video.
 								</video>
 							</section>
 						</div> <!-- Close div class=4u second one -->
 
 
-
 						<div class="4u">  <!-- third  -->
 							<section class="special">
-								<h3>Cinema Spec C</h3>
-								<p>A Spec C database of a cosmology dark matter halo simulations.  The halo cores and the volume visualization are saved separately and can be turned on and off separately enabling different views of the information available in the data.  The data is saved as a function of time, theta, and phi. </p>
-								<video class="image fit" controls>
-									<source src="videos/HaloVolDemo.mp4" type="video/mp4">
-									Your browser does not support HTML5 video.
-								</video>
-							</section>
-						</div> <!-- Close div class=4u third one -->
-
-					</div> <!-- Close div first row of three -->
-					<hr class="major" />
-	 			  <div class="row">
-
-						<div class="4u">  <!-- fourth  -->
-							<section class="special">
-								<h3>Cinema:Explorer - Spec D</h3>
-								<p> The parallel coordinates view is used to explore the Nyx simulation.  The parallel coordinates view can be used to select images with similar properties.  The scatterplot can be used to explore correlations between variables.  The variables in the database include time, phi, theta, entropy, sample number, and data abstracts such as Hu moments and Canny edge value.   </p>
+								<h3>Cinema:Explorer</h3>
+								<p> Cinema:Explorer is used to view a dark matter halo simulation database.  The parallel coordinates view can be used to select images with similar properties.  The scatterplot can be used to explore correlations between variables. This viewer is allows a range of analysis approaches.</p>
 								<video class="image fit" controls>
 									<source src="videos/NyxExplorerDemo.mp4" type="video/mp4">
 									Your browser does not support HTML5 video.
 								</video>
 							</section>
-						</div> <!-- Close div class=4u fourth one -->
+						</div> <!-- Close div class=4u third one -->
+
+					</div> <!-- Close div first row of three objects -->
+					<hr class="major" />
+
+	 			  <div class="row">
 
 						<div class="4u"> <!-- fifth  -->
 							<section class="special">
-								<h3>Browser-based Viewer Examples</h3>
-								<p>The browser-based Cinema viewer can be used to explore a set of online science-based Cinema examples.</p>
+								<h3>Browser-based Viewer </h3>
+								<p>The browser-based Cinema viewer can be used to explore a set of online science-based Cinema examples.  The browser-based viewer is no longer officially supported.  </p>
 								<img src="images/viewerBrowser.png" atl="Browser based Cinema Viewer" class="image fit"/>
 								<ul class="actions">
 									<li><a href="http://cinemaviewer.org/" class="button alt">Cinema Browser Viewer</a></li>

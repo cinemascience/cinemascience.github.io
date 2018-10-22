@@ -43,132 +43,83 @@
 		<!-- Main -->
 			<section id="main" class="wrapper style1">
 				<header class="major">
-					<h2>Cinema Specifications and Downloads</h2>
+					<h2>Cinema Code, Specifications, and Downloads</h2>
 				</header>
 				<div class="container">
 
-				<hr class="major" />
+					<hr class="major" />
+					<section> <!--  -->
+						<h2>Cinema Code </h2>
+						<p> The main Cinema project <a target="_blank" href="https://github.com/cinemascience/cinema"> Github code repository</a> contains code for viewers and writers, official specifications, example data sets, and submodules for all Cinema released code.  Basic viewers can be expanded with cinema_components and the submodules provide working examples for users with specialized analysis needs.  </p>
+				 	</section>
 
-				<section> <!-- First row: specifications -->
-					<h2>Cinema Specifications</h2>
-					<a href="#" class="image fit"></a>
-					<p> The official Cinema specifications can be found in the following documents: </p>
-					<ul>
-						<li><a href="http://cinemascience.dsscale.org/wp-content/uploads/sites/13/2016/10/CinemaSimpleSpec_v1.1_rev01.pdf">Astaire -- Spec A </a>
-						<li><a href="http://cinemascience.org/wp-content/uploads/sites/13/2017/01/CinemaFileSpecification-chaplin_v1.0.pdf">Chaplin -- Spec C </a>
-						<li><a href="http://cinemascience.org/wp-content/uploads/sites/13/2017/12/cinema_specD_v011.pdf">Dietrich -- Spec D </a>
-					</ul>
-			 	</section>
+					<hr class="major" />
+					<section> <!-- specifications -->
+						<h2>Cinema Specifications</h2>
+						<a href="#" class="image fit"></a>
+						<p> The official Cinema specifications can be found in the following document: <a target="_blank" href="https://github.com/cinemascience/cinema/blob/master/specs/dietrich/01/cinema_specD_v012.pdf">Dietrich -- Spec D </a>
+						</p>
+			 		</section>
+
+					<hr class="major" />
+					<section> <!-- viewer applications  -->
+						<h2>Cinema Viewer Applications</h2>
+						<p> These are the currently supported basic viewers. Examples can be seen on the <a href="examples.html">Examples</a> page.</p>
+						<ul>
+							<li><a target="_blank" href="https://github.com/cinemascience/cinema_explorer">Cinema:Explorer (Spec D)</a> -- the Spec D parallel components viewer.  The parallel coordinates widget allows the user to select and threshold data, promoting interaction with the entire Cinema database and parameter space.  In addition to the parallel coordinates widget, it includes an image spread and a scatterplot.
+							<li><a target="_blank" href="https://github.com/cinemascience/cinema_compare">Cinema:Compare (Spec D)</a> -- the Spec D interactive viewer allows the user to access the image artifacts in a Cinema database via UI sliders linked to the database parameters.  It can be used with a single Cinema database to explore the data interactively.  Or it can be used with multiple databases to compare and contrast, e.g., different run parameters or the effect of different algorithms applied to the data.
+							<li><a target="_blank" href="https://github.com/cinemascience/cinema_components">cinema_components</a> -- a JavaScript/D3-based library of Spec D compliant components for building browser-based viewers.
+						</ul>
+			 	  </section>
+
+					<hr class="major" />
+					<section> <!-- writers  -->
+						<h2>Cinema Writers</h2>
+						<ul>
+							<li><a target="_blank" href="https://github.com/cinemascience/cinema_lib">cinema_lib</a> -- a python-based command line tool; it includes  associated modules that implement various algorithms (statistics, image-based algorithms, etc.) that can be run on Cinema databases.
+						</ul>
+			 	  </section>
 
 				<hr class="major" />
 					<section> <!-- First row: sphere databases -->
-						<h2>Example Sphere Databases</h2>
-						<a href="#" class="image fit"></a>
-						<p>These are sample Cinema databases  (CDBs) that can be used to explore Cinema functionality.  Each database includes the control file for that specification: info.json for Spec A & Spec C  or data.csv for Spec D.  Images for each database are organized into the necessary subdirectories. </p>
+						<h2>Example Databases</h2>
+						<p>These are sample Cinema databases (CDB) that can be used to explore Cinema functionality.  Each Spec D CDB includes the control file <strong>data.csv</strong>.  Images for each database are organized into the necessary subdirectories under image/*. </p>
 					</section>
 
 					<div class="row">
 						<div class="4u">  <!-- was 6u -->
 							<section class="special">
-								<h3><img src="images/exampleSpecA.png" atl="Spec A sphere" class="image fit"/></h3>
-								<p><small> Spec A Sphere: this "Simple" database has 1 theta and 20 phi values. </small></p>
+								<h3><img src="images/exampleInteractiveSpecD.png" atl="Spec D sphere" class="image fit"/></h3>
+								<p><small> Spec D Sphere: this "simple" database has 1 theta and 20 phi values. Downloaded from Github (it is also included in the cinema_explorer download):</small></p>
 								<ul class="actions">
-									<li><a href="http://cinemascience.org/wp-content/uploads/sites/13/2017/11/sphere_a.cdb_.zip" class="button alt">Spec A CDB</a></li>
+									<li><a target="_blank" href="https://github.com/cinemascience/cinema_compare/tree/master/data" class="button alt">Spec D CDB</a></li>
 								</ul>
 							</section>
 						</div>
 
-						<div class="4u">
-							<section class="special">
-								<h3><img src="images/exampleSpecC.png" atl="Spec C sphere" class="image fit"/></h3>
-								<p><small> Spec C Sphere: this database has 5 theta and 5 phi values.  </small> </p>
-								<ul class="actions">
-									<li><a href="http://cinemascience.org/wp-content/uploads/sites/13/2017/10/sphere_c.cdb_.zip" class="button alt">Spec C
-										CDB</a></li>
-								</ul>
-							</section>
-						</div>
-
-						<div class="4u">
-							<section class="special">
-										<h3><img src="images/exampleSpecD.png" atl="Spec C sphere" class="image fit"/></h3>
-								<p><small> Spec D Sphere: this database has 1 theta and 20 phi values.  </small> </p>
-								<ul class="actions">
-									<li><a href="http://cinemascience.org/wp-content/uploads/sites/13/2017/11/sphere_d.cdb_.zip" class="button alt">Spec D CDB</a></li>
-								</ul>
-							</section>
-						</div>
 					</div> <!-- end first row -->
 
-					<hr class="major" />
-					<section>   <!-- Second row: science databases -->
-						<h2>Science Example Databases</h2>
-						<a href="#" class="image fit"></a>
-						<p>These are more realistic science-based example databases. Both are Spec C databases and include multiple channels which can be separately visualized (e.g., turned on or off) with an appropriate viewer.    </p>
-					</section>
-
-					<div class="row">
-						<div class="4u">
-							<section class="special">
-								<h3><img src="images/exampleVPIC.png" atl="VPIC" class="image fit"/> </h3>
-								<p><small> VPIC Simulation: a VPIC (Vector Particle-in-Cell) plasma simulation. </small> </p>
-								<ul class="actions">
-									<li><a href="http://cinemascience.org/wp-content/uploads/sites/13/2018/04/vpic_plasma.cdb_.zip" class="button alt">VPIC CDB</a></li>
-								</ul>
-							</section>
-						</div>
-
-						<div class="4u">
-							<section class="special">
-								<h3><img src="images/exampleHACC.png" atl="HACC" class="image fit"/></h3>
-								<p><small> HACC Simulation:  HACC (Hardware/Hybrid Accelerated Cosmology Code) cosmology simulation. </small> </p>
-								<ul class="actions">
-									<li><a href="http://cinemascience.org/wp-content/uploads/sites/13/2018/04/hacc_halos_time.cdb_.zip" class="button alt">HACC CDB</a></li>
-								</ul>
-							</section>
-						</div>
-					</div>  <!-- end second row -->
 
 					<hr class="major" />
 					<section>   <!-- Third row: Viewer downloads -->
-						<h2>Cinema Viewers</h2>
-						<a href="#" class="image fit"></a>
-						<p>These are reference implementations of Cinema viewers that work on the different Cinema specs.   </p>
-					</section>
-					<div class="row">
-						<div class="4u">
-							<section class="special">
-								<h3><img src="images/viewerDesktop.png" atl="Desktop Viewer" class="image fit"/> </h3>
-								<p><small>Cinema Desktop Viewer: an application to view Spec A & Spec C databases. Choose version (Mac downloads may require starting twice on some systems). </small></p>
-								<ul class="actions">
-									<li><a href="http://cinemascience.dsscale.org/cv/qtviewer.build/cinema_1.0_OSX10.12.dmg" class="button alt">Mac OSX 10.12 (Sierra)</a></li>
-									<li><a href="http://cinemascience.dsscale.org/cv/qtviewer.build/cinema_1.0_OSX10.10.dmg" class="button alt">Mac OSX 10.10 (Yosemite)</a></li>
-									<li><a href="https://data.kitware.com/api/v1/file/58174e8d8d777f10f26ee330/download" class="button alt">Linux CentOS and similar</a></li>
-									<li><a href="https://data.kitware.com/api/v1/file/58acc3ed8d777f0aef5cff94/download" class="button alt">Windows 7 </a></li>
-								</ul>
-							</section>
-						</div>
+						<h2>Deprecated Applications and Code</h2>
+						<p>These codes are for applications used by earlier specifications and are no longer supported.   </p>
+						<ul >
+							<li> Desktop Viewer (Spec A & C) Version 1.0:</li>
+							<ul >
+								<li> <a target="_blank" href="https://github.com/cinemascience/cinema_compare/tree/master/data">Code Repository</a></li>
+								<li><a href="http://cinemascience.dsscale.org/cv/qtviewer.build/cinema_1.0_OSX10.12.dmg">Mac OSX 10.12 (Sierra)</a></li>
+								<li><a href="http://cinemascience.dsscale.org/cv/qtviewer.build/cinema_1.0_OSX10.10.dmg">Mac OSX 10.10 (Yosemite)</a></li>
+							</ul>
+							<li> Desktop Viewer (Spec A & C) Version 0.9:</li>
+							<ul >
+								<li><a href="https://data.kitware.com/api/v1/file/58174e8d8d777f10f26ee330/download">Linux CentOS and similar</a></li>
+								<li><a href="https://data.kitware.com/api/v1/file/58acc3ed8d777f0aef5cff94/download">Windows 7 </a></li>
+							</ul>
+							<li><a href="http://cinemaviewer.org/">Cinema CVLIB</a> A Web-based Spec A viewer.
+						</ul>
+  				</section>
 
-						<div class="4u">
-							<section class="special">
-								<h3><img src="images/viewerBrowser.png" atl="Browser based Cinema Viewer" class="image fit"/></h3>
-								<p><small>Cinema CVLIB: A browser-based Spec A/C viewer.  Run directly from browser. </small></p>
-								<ul class="actions">
-									<li><a href="http://cinemaviewer.org/" class="button alt">Cinema Browser Viewer</a></li>
-								</ul>
-							</section>
-						</div>
-
-						<div class="4u">
-							<section class="special">
-								<h3><img src="images/parallelCoordinates.png" atl="Cinema Explorer" class="image fit"/></h3>
-								<p><small>Cinema Explorer: A browser-based Spec D parallel coordinates viewer.  Download from the Github repository.</small></p>
-								<ul class="actions">
-									<li><a href="https://github.com/cinemascience/cinema_explorer" class="button alt">Cinema Explorer</a></li>
-								</ul>
-							</section>
-						</div>
-					</div>  <!-- end third row -->
 
 				</div> <!-- end container  -->
 			</section>  <!-- end full downloads section -->
