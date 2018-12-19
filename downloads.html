@@ -50,7 +50,7 @@
 					<hr class="major" />
 					<section> <!--  -->
 						<h2>Cinema Code </h2>
-						<p> The main Cinema project <a target="_blank" href="https://github.com/cinemascience/cinema"> Github code repository</a> contains code for viewers and writers, official specifications, example data sets, and submodules for all Cinema released code.  Basic viewers can be expanded with cinema_components and the submodules provide working examples for users with specialized analysis needs.  </p>
+						<p> The main Cinema project <a target="_blank" href="https://github.com/cinemascience"> Github code repository</a> contains code for viewers and writers, official specifications, example data sets, and submodules for all Cinema released code.  Basic viewers can be expanded with cinema_components and the submodules provide working examples for users with specialized analysis needs.  </p>
 				 	</section>
 
 					<hr class="major" />
@@ -66,17 +66,17 @@
 						<h2>Cinema Viewer Applications</h2>
 						<p> These are the currently supported basic viewers. Examples can be seen on the <a href="examples.html">Examples</a> page.</p>
 						<ul>
-							<li><a target="_blank" href="https://github.com/cinemascience/cinema_explorer">Cinema:Explorer (Spec D)</a> -- the Spec D parallel components viewer.  The parallel coordinates widget allows the user to select and threshold data, promoting interaction with the entire Cinema database and parameter space.  In addition to the parallel coordinates widget, it includes an image spread and a scatterplot.
-							<li><a target="_blank" href="https://github.com/cinemascience/cinema_compare">Cinema:Compare (Spec D)</a> -- the Spec D interactive viewer allows the user to access the image artifacts in a Cinema database via UI sliders linked to the database parameters.  It can be used with a single Cinema database to explore the data interactively.  Or it can be used with multiple databases to compare and contrast, e.g., different run parameters or the effect of different algorithms applied to the data.
+							<li><a target="_blank" href="https://github.com/cinemascience/cinema_explorer">CinemaExplorer (Spec D)</a> -- the Spec D parallel components viewer.  The parallel coordinates widget allows the user to select and threshold data, promoting interaction with the entire Cinema database and parameter space.  In addition to the parallel coordinates widget, it includes an image spread and a scatterplot.
+							<li><a target="_blank" href="https://github.com/cinemascience/cinema_compare">CinemaCompare (Spec D)</a> -- the Spec D interactive viewer allows the user to access the image artifacts in a Cinema database via UI sliders linked to the database parameters.  It can be used with a single Cinema database to explore the data interactively.  Or it can be used with multiple databases to compare and contrast, e.g., different run parameters or the effect of different algorithms applied to the data.
 							<li><a target="_blank" href="https://github.com/cinemascience/cinema_components">cinema_components</a> -- a JavaScript/D3-based library of Spec D compliant components for building browser-based viewers.
 						</ul>
 			 	  </section>
 
 					<hr class="major" />
 					<section> <!-- writers  -->
-						<h2>Cinema Writers</h2>
+						<h2>Cinema Algorithms </h2>
 						<ul>
-							<li><a target="_blank" href="https://github.com/cinemascience/cinema_lib">cinema_lib</a> -- a python-based command line tool; it includes  associated modules that implement various algorithms (statistics, image-based algorithms, etc.) that can be run on Cinema databases.
+							<li><a target="_blank" href="https://github.com/cinemascience/cinema_lib">cinema_lib</a> -- a python-based command line tool; it includes  associated modules that implement various algorithms (statistical algorithms, image-based algorithms, etc.) that can be run on Cinema databases.
 						</ul>
 			 	  </section>
 
@@ -87,13 +87,20 @@
 					</section>
 
 					<div class="row">
-						<div class="4u">  <!-- was 6u -->
+						<div class="6u">  <!-- was 6u -->
 							<section class="special">
 								<h3><img src="images/exampleInteractiveSpecD.png" atl="Spec D sphere" class="image fit"/></h3>
-								<p><small> Spec D Sphere: this "simple" database has 1 theta and 20 phi values. Downloaded from Github (it is also included in the cinema_explorer download):</small></p>
+								<p><small> Spec D Sphere: this simple database has 1 theta and 20 phi values. Download from Github (it is also included in the cinema_explorer download):</small></p>
 								<ul class="actions">
-									<li><a target="_blank" href="https://github.com/cinemascience/cinema_compare/tree/master/data" class="button alt">Spec D CDB</a></li>
+									<li><a target="_blank" href="https://github.com/cinemascience/cinema_compare/tree/master/data" class="button alt">Spec D Example Databases</a></li>
 								</ul>
+							</section>
+						</div>
+
+						<div class="6u">  <!-- was 6u -->
+							<section class="special">
+								<h3><img src="images/exampleSedovSpecD.png" atl="Spec D sedov" class="image fit"/></h3>
+								<p><small> Spec D Sedov Blast Wave: three example databases are available, each with 7 theta, 7 phi values and 10 time steps. Part of the cinema_compare download:</small></p>
 							</section>
 						</div>
 
