@@ -7,6 +7,8 @@
 
 <tr>
 <td><a href="../2019-01_ECP/materials/halo.html"><img src="../2019-01_ECP/materials/thumbs/halo.png" width="200" border="2"></a></td>
+</tr>
+<tr>
 <td>Halo Dataset</td>
 </tr>
 
