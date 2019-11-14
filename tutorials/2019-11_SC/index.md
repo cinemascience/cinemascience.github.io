@@ -1,6 +1,6 @@
 # Cinema Tutorial: SuperComputing 2019
 
-Cinema Tutorial for Supercomputing 2019 in Denver, CO. 
+Cinema Tutorial for Supercomputing 2019 in Denver, CO. This tutorial is intended to be run in a virtual machine that the attendees can download and run. An alternative is to follow along with the slides and examples shown here.
 
 - [Tutorial Slides](https://github.com/cinemascience/cinema_tutorial_slides/blob/master/2019-11_SC19/tutorial_sc19.pdf). Instructions and presentation that accompanies this tutorial.
 - [Tutorial Materials](https://github.com/cinemascience/cinema_tutorial_2019-11_SC). You can pull this repository, and work through it. Take care to install the prerequisite software, and follow prep instructions.
