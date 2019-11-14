@@ -1,7 +1,7 @@
 <html lang=eng>
 <head>
     <meta charset=utf-8>
-    <title>ECP Data Workflow</title>
+    <title>Cinema Tutorial: Supercomputing 2019</title>
     <link rel="stylesheet" type="text/css" href="web/workflow.css"></link>
 </head>
 
