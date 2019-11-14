@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>tutorial_offline</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<h1 id="cinema-tutorial-instructions---2019-sc">Cinema Tutorial Instructions - 2019 SC</h1>
+<p>This Cinema tutorial will go through two workflows: exporting a Cinema database from ParaView and running a command line analysis workflow.</p>
+<p>You will need to have these installed/set up before running the tutorial:</p>
+<ul>
+<li>ParaView 5.7.1</li>
+<li>Install cinema_lib: <a href="https://github.com/cinemascience/cinema_lib">cinema_lib Github instructions</a></li>
+<li>A browser set up with appropriate permissions:
+<ul>
+<li>Safari
+<ul>
+<li>Safari-&gt;Preferences-&gt;Advanced-&gt;Show Develop menu in menu bar</li>
+<li>Safari-&gt;Develop-&gt;Disable Local File Restrictions (on)</li>
+<li><strong>NOTE:</strong> Reset file restrictions when you are done</li>
+</ul></li>
+<li>Firefox
+<ul>
+<li>In address bar, input <strong>about:config:</strong>
+<ul>
+<li>Change <strong>privacy.file_unique_origin</strong> to <strong>false</strong></li>
+</ul></li>
+<li><strong>NOTE:</strong> Reset file restrictions when you are done</li>
+</ul></li>
+<li>Chrome (exit Chrome)
+<ul>
+<li>use –disable-web-security command line option for this session</li>
+<li>example for Mac: /Applications/Google Chrome.app/Contents/MacOS/Google Chrome –args –user-data-dir=“/var/tmp/Chrome dev session” –disable-web-security tutorial.html &gt;&gt; /dev/null 2&gt;&amp;1</li>
+</ul></li>
+</ul></li>
+</ul>
+<h2 id="export-a-cinema-database-from-paraview-5.7.1">Export a Cinema database from ParaView 5.7.1</h2>
+<ul>
+<li><a href="scripts_offline/make_nyx_cinema_database.html">Application Export Example (ParaView)</a></li>
+</ul>
+<h2 id="run-a-cinema_lib-workflow-to-find-contours">Run a cinema_lib workflow to find contours</h2>
+<ul>
+<li><a href="scripts_offline/run_cinema_lib_workflow.html">Cinema Command Line Algorithm Example</a></li>
+</ul>
+</body>
+</html>

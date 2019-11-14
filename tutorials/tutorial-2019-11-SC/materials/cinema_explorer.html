@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+	<title>Cinema:Explorer</title>
+	<meta charset="utf-8">
+	<meta name='author' content="Cameron Tauxe">
+	<meta name='author' content="James Ahrens">
+	<meta name='author' content="David Rogers">
+
+    <!-- external -->
+	<script src="https://d3js.org/d3.v4.min.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/vtk.js"></script>
+
+    <!-- components -->
+	<link rel='stylesheet' href='https://cinemascience.github.io/release/CinemaComponents.v2.6.2.min.css'>
+	<script src='https://cinemascience.github.io/release/CinemaComponents.v2.6.2.min.js'></script>
+
+	<!-- alternative local components files (for testing builds) (please comment this out before commiting)-->
+	<!--
+	<link rel='stylesheet' href='test/CinemaComponents.min.css'>
+	<script src='test/CinemaComponents.js'></script>
+	-->
+
+	<!--Import Viewer's CSS-->
+	<link rel='stylesheet' href='cinema/explorer/1.9/css/viewer.css'>
+</head>
+<body>
+	<div id="top">
+		<div id="header">
+			<h1>Cinema:Explorer</h1>
+			<!--Controls to select and load databases-->
+			<div id="databaseControls">
+				<span id="databaseLabel">Select Database:</span>
+				<br>
+				<select id="database"></select>
+				<button id="loadButton" onclick="load()">Load</button>
+			</div>
+		</div>
+		<div id="pcoordArea">
+			<!--Slide-out control panel for defining a custom path and querying for results similar to it-->
+			<div id="slideOut">
+				<div id="slideOutContents" style="display:none;">
+					<div id="queryContainer"></div>
+				</div>
+				<!--Button to show/hide the panel-->
+				<div id="showHideButton" onclick="toggleShowHide()">
+					<span id="showHideLabel">></span>
+				</div>
+			</div>
+			<!--Contains the pcoord component-->
+			<div id="pcoordContainer"></div>
+			<!--readout for the number of results currently selected-->
+			<div id="selectionStats"></div>
+			<!--Checkbox for toggling smooth lines on the chart-->
+			<div id="smoothLinesWrapper">
+				<input id="smoothLines" type="checkbox" checked="checked" oninput="updateSmoothLines()">Smooth Lines</input>
+			</div>
+		</div>
+		<!--Bar to click-and-drag to resize the chart-->
+		<div id="resizeBar"></div>
+	</div><!--end "top"-->
+
+	<!--The lower half of the page contains a component for viewing the selected data-->
+	<!--"Tabs" to select which component to use as the view-->
+	<div id="tabContainer">
+		<div class="tab" id="imageSpreadTab" selected="selected" onclick="changeView(viewType.IMAGESPREAD)">Image Spread</div>
+		<div class="tab" id="scatterPlotTab" selected="default" onclick="changeView(viewType.SCATTERPLOT)">Scatter Plot</div>
+	</div>
+	<!--The container for whichever component is selected-->
+	<div id="viewContainer"></div>
+
+	<!--Main Script-->
+	<script src="cinema/explorer/1.9/js/main.js"></script>
+</body>
+</html>

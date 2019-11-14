@@ -1,0 +1,9 @@
+<VTKFile type="Collection" version="1.0" byte_order="LittleEndian" header_type="UInt64" compressor="vtkZLibDataCompressor">
+  <Collection>
+    <DataSet timestep="0" part="0" file="nyx/nyx_0_0.vti"/>
+    <DataSet timestep="1" part="0" file="nyx/nyx_0_1.vti"/>
+    <DataSet timestep="2" part="0" file="nyx/nyx_0_2.vti"/>
+    <DataSet timestep="3" part="0" file="nyx/nyx_0_3.vti"/>
+    <DataSet timestep="4" part="0" file="nyx/nyx_0_4.vti"/>
+  </Collection>
+</VTKFile>

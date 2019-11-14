@@ -1,0 +1,14 @@
+[
+	{
+		"name" : "Output slices.cdb",
+		"directory" : "data/nyx/slices.cdb"
+	},
+	{
+		"name" : "Original slices.cdb",
+		"directory" : "data/nyx/clean_slice.cdb"
+	},
+	{
+		"name" : "Finished slices.cdb",
+		"directory" : "data/nyx/nyxSlices_preFab.cdb"
+	}
+]

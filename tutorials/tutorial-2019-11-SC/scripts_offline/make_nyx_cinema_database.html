@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>make_nyx_cinema_database</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<h1 id="export-a-cinema-database-from-paraview-5.7-using-the-nyx-tutorial-dataset">Export a Cinema Database from ParaView 5.7 using the Nyx Tutorial Dataset</h1>
+<h2 id="workflow">Workflow</h2>
+<h3 id="setup-paraview-gui-with-the-dataset">Setup ParaView GUI with the dataset</h3>
+<ul>
+<li>Clone the tutorial repository:
+<ul>
+<li>git clone https://github.com/cinemascience/cinema_tutorial_2019-11_SC.git</li>
+</ul></li>
+<li>Open ParaView 5.7.1 GUI</li>
+<li>Select <strong>File</strong> -&gt; <strong>Load State</strong> command</li>
+<li>Navigate to the cinema_tutorial_2019-11_SC directory and select loadNyxDataset.pvsm state file.<br />
+</li>
+<li>For the <strong>Load State Options</strong>, you will need to choose <strong>Search files under specified directory</strong> and navigate to the nyxTutorialDataset/ folder to select <strong>nyx.pvd</strong>.</li>
+<li>In the <strong>Pipeline Browser</strong>, click to highlight <strong>nxy.pvd</strong></li>
+</ul>
+<h3 id="setup-and-export-the-cinema-database">Setup and export the Cinema database</h3>
+<ul>
+<li>Under <strong>View</strong>, select <strong>Export Inspector</strong> (if needed)</li>
+<li>Select <strong>Export Inspector</strong> tab</li>
+<li>Under <strong>Image Extracts</strong>, select the choices from the dropdown menus:</li>
+</ul>
+<pre><code>RenderView1         Cinema image database (*.cdb)</code></pre>
+<ul>
+<li>Click on the checkbox to establish these choices</li>
+<li>Click on the ellipsis menu to bring up the <strong>Save Screenshot Options</strong> menu</li>
+<li>Use <strong>Camera Model</strong> dropdown menu to select <strong>Phi-Theta</strong></li>
+</ul>
+<p>Update the path under <strong>Root Directory</strong> to point to the expected output directory:</p>
+<pre><code>/&lt;path-to-repo&gt;/cinema_tutorial_2019-11_SC/materials/data/nyx.cdb</code></pre>
+<p>Select <strong>File</strong> -&gt; <strong>Export Now</strong> to export the Cinema Database.</p>
+<p>You can watch the <strong>Time</strong> counter at the top. There are 5 timesteps (0 to 4). When the timestep counter gets to four and the frame resets, the export will be finished.</p>
+<h3 id="view-the-nyx.cdb-in-the-cinemacompare-viewer">View the nyx.cdb in the CinemaCompare viewer</h3>
+<p>Open CinemaCompare in Firefox:</p>
+<pre><code>$ firefox materials/cinema_compare.html</code></pre>
+<p>If you do not want to run the workflow, you can still look at an example database:</p>
+<pre><code>$ firefox materials/example_compare.html</code></pre>
+<p>Use the sliders to explore the Nyx Cinema Database.</p>
+<h3 id="acknowledgement">Acknowledgement</h3>
+<p>This tutorial uses a dataset from the open source Nyx cosmology simulation:</p>
+<p>A. S. Almgren, J. B. Bell, M.J. Lijewski, Z. Lukic, E. Van Andel, “Nyx: A Massively Parallel AMR Code for Computational Cosmology” Astrophysical Journal, 765, 39, 2013. https://amrex-astro.github.io/Nyx/index.html</p>
+</body>
+</html>

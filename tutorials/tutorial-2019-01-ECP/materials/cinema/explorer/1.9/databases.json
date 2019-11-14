@@ -1,0 +1,14 @@
+[
+	{
+		"name" : "sphere",
+		"directory" : "data/sphere.cdb"
+	},
+	{
+		"name" : "Multiple Artifacts",
+		"directory" : "data/multi_artifact.cdb"
+	},
+	{
+		"name" : "Ocean Algorithm Example",
+		"directory" : "data/ocean/ocean_algorithm.cdb"
+	}
+]

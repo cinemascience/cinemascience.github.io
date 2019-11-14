@@ -1,0 +1,21 @@
+theta,phi,vti x-radius,pdb,FILE,FILE_VTI,FILE_PDB
+0,-180,10,good,image/-180/0.png,wavelet/10.vti,good.pdb
+0,-162,20,N/A,image/-162/0.png,wavelet/20.vti,
+0,-144,30,N/A,image/-144/0.png,wavelet/30.vti,
+0,-126,40,N/A,image/-126/0.png,,
+0,-108,NaN,N/A,image/-108/0.png,,
+0,-90,NaN,2LYZ,image/-90/0.png,,2LYZ.pdb
+0,-72,NaN,N/A,image/-72/0.png,,
+0,-54,NaN,N/A,image/-54/0.png,,
+0,-36,40,caffeine,image/-36/0.png,wavelet/40.vti,caffeine.pdb
+0,-18,NaN,N/A,image/-18/0.png,,
+0,0,40,N/A,image/0/0.png,wavelet/40.vti,
+0,18,NaN,pdb100d.ent,image/18/0.png,,pdb100d.ent.pdb
+0,36,NaN,N/A,image/36/0.png,,
+0,54,NaN,N/A,image/54/0.png,,
+0,72,NaN,N/A,image/72/0.png,,
+0,90,NaN,N/A,image/90/0.png,,
+0,108,NaN,N/A,image/108/0.png,,
+0,126,NaN,N/A,image/126/0.png,,
+0,144,NaN,N/A,image/144/0.png,,
+0,162,NaN,N/A,image/162/0.png,,

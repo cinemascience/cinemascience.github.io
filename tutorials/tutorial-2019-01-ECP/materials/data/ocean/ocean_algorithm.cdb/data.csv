@@ -1,0 +1,7 @@
+time,image canny count,FILE,FILEimage greyscale,FILEcv canny
+0.000000e+00,12246,0.000000e+00.png,0.000000e+00_image_grey.png,0.000000e+00_image_grey_cv_canny.png
+1.000000e+00,12056,1.000000e+00.png,1.000000e+00_image_grey.png,1.000000e+00_image_grey_cv_canny.png
+2.000000e+00,11946,2.000000e+00.png,2.000000e+00_image_grey.png,2.000000e+00_image_grey_cv_canny.png
+3.000000e+00,11749,3.000000e+00.png,3.000000e+00_image_grey.png,3.000000e+00_image_grey_cv_canny.png
+4.000000e+00,12223,4.000000e+00.png,4.000000e+00_image_grey.png,4.000000e+00_image_grey_cv_canny.png
+5.000000e+00,12661,5.000000e+00.png,5.000000e+00_image_grey.png,5.000000e+00_image_grey_cv_canny.png

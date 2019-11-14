@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>run_cinema_lib_workflow</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<h1 id="analyze-a-cinema-database-using-cinema_lib-command-line-tools">Analyze a Cinema database using cinema_lib command line tools</h1>
+<p>In this example, we will use cinema_lib command line tools to find contours in slices of Nyx data. These contours correspond to dark matter halos and connecting filaments.</p>
+<h2 id="workflow">Workflow</h2>
+<p>Be sure that cinema command line tools have been installed.</p>
+<h3 id="check-and-validate-the-database-verbosely">Check and validate the database (verbosely)</h3>
+<pre><code>$ cd /&lt;path-to-repo&gt;/cinema_tutorial_2019-11_SC/materials/data/nyx
+$ cinema -itvq -d slices.cdb</code></pre>
+<p>Take note of the column names (timestep, slice, FILE) and associated column numbers.</p>
+<h3 id="run-the-analysis-workflow">Run the analysis workflow</h3>
+<p>This workflow will use the command line tools library, cinema_lib, to extract statistical properties from the data and to find and draw isolines to identify features - halos - in the data.</p>
+<p>The computer vision based operations use openCV. The -cv-grey option takes the column number of the image as its argument. This database has three columns:</p>
+<pre><code>timestep,slice,FILE</code></pre>
+<p>First convert the database image to greyscale. Note from validating the database that FILE has column=2:</p>
+<pre><code>$ cinema -d slices.cdb --cv-grey 2</code></pre>
+<p>You can check the database column headers if you want. Notice the added column with the greyscale image.</p>
+<pre><code>$ cinema -i -d slices.cdb</code></pre>
+<p>Each command line directive adds an output column to the Cinema database, creating an updated data.csv.</p>
+<p>Now run a series of statistical calculations, each adding a column and moving the FILE column farther down:</p>
+<pre><code>$ cinema -d slices.cdb --image-mean 3
+$ cinema -d slices.cdb --image-stddev 4
+$ cinema -d slices.cdb --image-entropy 5</code></pre>
+<p>Now run the contour finding algorithm. This takes two arguments: the column number of the FILE image and a contour threshold. Run it twice to compare different thresholds:</p>
+<pre><code>$ cinema -d slices.cdb --cv-contour-threshold 5 70
+$ cinema -d slices.cdb --cv-contour-threshold 5 45</code></pre>
+<h3 id="view-the-nyx.cdb-in-the-cinemaexplorer-viewer">View the nyx.cdb in the CinemaExplorer viewer</h3>
+<p>Open CinemaCompare in Firefox:</p>
+<pre><code>$ firefox /&lt;path-to-repo&gt;/cinema_tutorial_2019-11_SC/materials/cinema_explorer.html</code></pre>
+<p>Use the parallel coordinates to select on the different parameters and explore the output database. The dropdown <strong>Select Database</strong> menu can be used to check the original database (before this workflow) and a finished database (after this workflow) to see if your output is as expected. Be sure to click <strong>Load</strong> after selecting a specific database.</p>
+</body>
+</html>
