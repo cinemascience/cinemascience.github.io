@@ -6,8 +6,8 @@
 
 <tr>
 <td><a href="../2019-01_ECP/materials/halo.html"><img src="../2019-01_ECP/materials/thumbs/halo.png" width="200" border="2"></a></td>
-<td><a href="materials/volume.html"><img src="materials/thumbs/volume.png" width="200" border="2"></a></td>
-<td><a href="materials/cinema_explorer.html?databases=databases.json"><img src="materials/thumbs/explorer.png" width="200" border="2"></a></td>
+<td><a href="../2019-01_ECP/materials/volume.html"><img src="../2019-01_ECP/materials/thumbs/volume.png" width="200" border="2"></a></td>
+<td><a href="../2019-01_ECP/materials/cinema_explorer.html?databases=databases.json"><img src="../2019-01_ECP/materials/thumbs/explorer.png" width="200" border="2"></a></td>
 </tr>
 
 <tr>
