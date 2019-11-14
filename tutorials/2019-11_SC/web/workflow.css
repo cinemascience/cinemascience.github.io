@@ -1,0 +1,30 @@
+div.container {
+    border: 1px solid gray;
+    padding: 10px;
+}
+
+body {
+    background-color: #f9f9f9;
+}
+
+header, footer {
+    padding: 1em;
+    color: white;
+    background-color: #373737;
+    clear: left;
+    text-align: center;
+}
+
+div.divider {
+    height: 10px;
+    color: white;
+    background-color: #373737;
+    clear: left;
+    text-align: center;
+}
+
+td {
+    vertical-align:top;
+    padding: 10px;
+}
+
