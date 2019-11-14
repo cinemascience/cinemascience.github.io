@@ -1,7 +1,6 @@
 # Cinema Tutorial Instructions - 2019 SC
 
-- [example](materials/example_compare.html)
-- [explorer](materials/cinema_explorer.html)
+## Simple Cinema Examples
 
 <table>
 
@@ -12,10 +11,15 @@
 </tr>
 
 <tr>
-<td>Halo Dataset</td>
+<td align="center">Halo Dataset</td>
 <td>Volume Dataset</td>
 <td>Multi-artifact</td>
 </tr>
 
 </table>
+
+## Tutorial Workflow Examples
+- [example](materials/example_compare.html)
+- [explorer](materials/cinema_explorer.html)
+
 
