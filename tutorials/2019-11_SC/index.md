@@ -1,8 +1,7 @@
 # Cinema Tutorial Instructions - 2019 SC
 
-- [compare](materials/cinema_compare.html)
-- [explorer](materials/cinema_explorer.html)
 - [example](materials/example_compare.html)
+- [explorer](materials/cinema_explorer.html)
 
 This Cinema tutorial will go through two workflows: exporting a Cinema database from ParaView and running a command line analysis workflow.
 
