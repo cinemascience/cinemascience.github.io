@@ -10,7 +10,7 @@ body {
 header, footer {
     padding: 1em;
     color: white;
-    background-color: #373737;
+    background-color: #000000;
     clear: left;
     text-align: center;
 }
@@ -18,7 +18,7 @@ header, footer {
 div.divider {
     height: 10px;
     color: white;
-    background-color: #373737;
+    background-color: #000000;
     clear: left;
     text-align: center;
 }
