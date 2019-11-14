@@ -8,7 +8,7 @@ Cinema Tutorial for Supercomputing 2019 in Denver, CO.
 
 These are examples of simple Cinema databases, showing the flexibility and power of the image-based approach. The last example shows a multi-artifact database, with data-specific viewers.
 
-<table>
+<table cellspacing="10">
 
 <tr>
 <td><a href="../2019-01_ECP/materials/halo.html"><img src="../2019-01_ECP/materials/thumbs/halo.png" width="200" border="2"></a></td>
