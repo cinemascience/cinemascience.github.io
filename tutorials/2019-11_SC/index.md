@@ -55,6 +55,6 @@ These are examples of simple Cinema databases, showing the flexibility and power
 </div>
 </body>
 
-<footer></footer>
+<footer>Copyright (c) 2019 Los Alamos National Laboratory</footer>
 <p></p> <center>
 <a href="https://www.cinemascience.org"><img src="web/cinema_logo_filmreel_named_100px.png" width="100" alt="A Cinema Production"></a></center>
