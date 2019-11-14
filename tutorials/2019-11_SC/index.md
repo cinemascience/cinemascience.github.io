@@ -18,7 +18,7 @@ Cinema Tutorial for Supercomputing 2019 in Denver, CO. This tutorial is intended
 
 - [Tutorial Slides](https://github.com/cinemascience/cinema_tutorial_slides/blob/master/2019-11_SC19/tutorial_sc19.pdf). Instructions and presentation that accompanies this tutorial.
 - [Tutorial Materials](https://github.com/cinemascience/cinema_tutorial_2019-11_SC). You can pull this repository, and work through it. Take care to install the prerequisite software, and follow prep instructions.
-- [Cinema Database Specification](https://github.com/cinemascience/cinema/blob/master/specs/dietrich/01/cinema_specD_v012.pdf)
+- [Cinema Database Specification](https://github.com/cinemascience/cinema/blob/master/specs/dietrich/01/cinema_specD_v012.pdf). The current Cinema database specification document.
 
 <div class="divider"><p></p></div> 
 ## Simple Cinema Examples
