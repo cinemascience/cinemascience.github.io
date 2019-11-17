@@ -20,7 +20,7 @@ Cinema Tutorial for Supercomputing 2019 in Denver, CO. This tutorial is intended
 - [Tutorial Materials](https://github.com/cinemascience/cinema_tutorial_2019-11_SC). You can pull this repository, and work through it. Take care to install the prerequisite software, and follow prep instructions.
 - [Cinema Database Specification](https://github.com/cinemascience/cinema/blob/master/specs/dietrich/01/cinema_specD_v012.pdf). The current Cinema database specification document.
 
-<div class="divider"><p></p></div> 
+<div class="divider"><p></p></div>
 ## Simple Cinema Examples
 
 These are examples of simple Cinema databases, showing the flexibility and power of the image-based approach. The last example shows a multi-artifact database, with data-specific viewers. These databases are not part of the tutorial, but are included to demonstrate Cinema.
@@ -46,11 +46,13 @@ These are examples of simple Cinema databases, showing the flexibility and power
 
 - [ECP Milestone Examples](https://portal.nersc.gov/project/alpine/2018_ECPReview_Cinema/review.new.html)
 
-<div class="divider"><p></p></div> 
+<div class="divider"><p></p></div>
 
 ## Tutorial Workflow Examples
-- [An example database](materials/example_compare.html) exported from ParaView, and viewed in the [Cinema:Compare](https://github.com/cinemascience/cinema_compare) viewer.
-- [A testing database](materials/cinema_explorer.html) viewed in the [Cinema:Explorer](https://github.com/cinemascience/cinema_explorer) viewer.
+- [An example database](materials/example_compare.html) exported from ParaView, and viewed in the [Cinema:Compare](https://github.com/cinemascience/cinema_compare) viewer.  
+  - [Web-based instructions for running this workflow](scripts_offline/make_nyx_cinema_database.html)
+- [A database from a simple analysis workflow](materials/cinema_explorer.html) viewed in the [Cinema:Explorer](https://github.com/cinemascience/cinema_explorer) viewer.  
+  - [Web-based instructions for running this workflow](scripts_offline/run_cinema_lib_workflow.html)
 
 </div>
 </body>
