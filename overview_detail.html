@@ -49,33 +49,45 @@
 					<h2>Cinema Overview</h2>
 		 <center> 			<p>Cinema - A Database Approach to Extreme Scale Visualization and Analysis.  </p>  </center>
 				</header>
+				<div class="container">
+					<div class="row"> <!-- This starts a major row/section -->
+						<div class="4u">
+							<section> <!-- This starts a sidebar section -->
+								<video class="image fit" controls>
+									<source src="videos/NyxExportDemo.mp4" type="video/mp4">
+									Your browser does not support HTML5 video.
+								</video>
+							</section> <!-- This ends a sidebar section -->
+							<hr />
+							<section>  <!-- This starts a sidebar section -->
+								<h3><img class="image fit" src="images/exampleSpecDNyxParallelCoordinates.png" alt="Sample Vis" /></h3>
+							</section>  <!-- This ends a sidebar section -->
+						</div>
+
+						<div class="8u skel-cell-important">
+							<section> <!-- This starts a main section -->
+							<h4>The <strong>Databases</strong>:</h4>
+								<p>Cinema represents a novel database approach to in-situ and post-processing scientific workflow that facilitates exploration, visualization, and analysis of both simulation and experimental data.   A Cinema database is a set of parameters mapped with a set of data artifacts. These data artifacts encompass a range of possibilities -- metadata such as run parameters, output variables, images, grids, csv files - any type of data that can be written to disk.  This database model supports multiple use cases:   </p>
+								<ul style="list-style-type:square">
+									<li> Searching/querying of metadata and data artifacts.  Samples can be searched on metadata, content, position, time, or a combination of all of these.  </li>
+									<li>Real-time interactive visualization of sets of data artifacts. </li>
+									<li>Playing interactive visualization, allowing the user on/off control of elements within the visualization. </li>
+							</ul>
+							<p> A general design philosophy of Cinema is that applications reading and viewing a Cinema database can determine which data to operate on, and which operations to perform. This promotes a wide range of possible interactions with
+							the data - not just the ones imagined by the creator of the database. 	</p>
+
+							<h4>Databases Work with <strong>Viewers</strong>:</h4>
+							<p>The foundation of Cinema is database specifications that provide a way for common data to be written and read by any application.   A Cinema viewer is an application designed to interact with a Cinema database.  We provide reference implementations of viewers on the <a href="downloads.html">Downloads</a> page , but these are by no means intended to be the only applications within the Cinema community.	Cinema is designed with the flexibility needed for the user to adapt it to the specific workflow.   </p>
+
+
+							</section>
+						</div>
+					</div> <!-- This ends  a major row/section -->
 
 
 
-<section id="main" class="wrapper style1">
-<header class="major">
-<h2>Cinema Overview</h2>
-<center><p>Pointers to resources and details on all things Cinema.</p></center>
-</header>
-
-<div class="container">
-
-<hr/>
-<section> <!-- viewer applications  -->
-<ul>
-    <li><a href="overview_details.html">Overview details</a>. More information on what Cinema's all about.</li>
-    <li><a href="downloads.html">Downloads</a>. Download code and applications .</li>
-    <li><a href="https://cinemasciencewebsite.readthedocs.io">Documentation</a></li>
-    <li><a href="tutorials.html">Tutorials</a>. Explore Cinema tutorials.</li>
-    <li><a href="viewers.html">Viewers</a>. Information and examples of Cinema viewers.</li>
-    <li><a href="publications.html">Publications</a>. A list of Cinema documentation.</li>
-</ul>
-</section>
-
-</div> <!-- end container  -->
-</section>  <!-- end full downloads section -->
-
-
+				</div>
+			</section>
 
 			<!-- Footer -->
 				<footer id="footer">
